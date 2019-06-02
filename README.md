@@ -4,10 +4,10 @@ When writing unit tests it quickly becomes apparent if the code you are testing 
 
 Unit tests should be exactly that; tests for a single unit of functionality - one behaviour. If the code is doing more than one thing, then the tests end up checking more than one thing too, and are no longer "unit" tests.
 
-##One reason to change
+## One reason to change
 Many people assume that SRP means "Do one thing", but actually the definition of the Single Responsibility Principle is: writing code that has one and only one reason to change. If a class has more than one reason to change, it has more than one responsibility. Classes with more than a single responsibility should be broken down into smaller classes, each of which should have only one responsibility and reason to change.
 
-##Refactoring for Simplicity
+## Refactoring for Simplicity
 The first step in refactoring a class for the Single Responsibility Principle is to break it down into smaller methods which focus on single tasks. For example, reading data, logging, outputting results are all distinct responsibilities.
 
 In the example file below, this is done in step 2, Refactor for Simplicity. You will see that we now have a single class broken down into multiple private methods.
@@ -24,7 +24,7 @@ This is also less than ideal from a testing perspective. If you were to write te
 
 Also, you cannot (or should not) test private methods. But as you will see in the next step, these methods don't have to be private, if you design them into their own classes.
 
-##Delegating to abstractions
+## Delegating to abstractions
 The next step is to refactor for abstraction.
 
 Delegating to abstractions is the linchpin of adaptive code and, without it, developers would struggle to adapt to changing requirements in the way that Scrum and other Agile processes demand.
