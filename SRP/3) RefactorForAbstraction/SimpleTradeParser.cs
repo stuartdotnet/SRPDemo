@@ -19,7 +19,7 @@ namespace SRP1._3__RefactorForAbstraction
 			foreach (var line in tradeData)
 			{
 				var fields = line.Split(new char[] { ',' });
-				if (!tradeValidator.Validate(fields, lineCount))
+				if (!tradeValidator.Validate(fields))
 				{
 					continue;
 				}

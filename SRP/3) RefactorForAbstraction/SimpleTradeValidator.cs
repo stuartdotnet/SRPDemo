@@ -10,7 +10,7 @@
 			this.logger = logger;
 		}
 
-		public bool Validate(string[] tradeData, int count)
+		public bool Validate(string[] tradeData)
 		{
 			if (tradeData.Length != 3)
 			{

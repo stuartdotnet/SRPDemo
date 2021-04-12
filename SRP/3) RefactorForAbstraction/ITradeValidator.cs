@@ -2,6 +2,6 @@
 {
 	public interface ITradeValidator
 	{
-		bool Validate(string[] trades, int lines);
+		bool Validate(string[] trades);
 	}
 }
