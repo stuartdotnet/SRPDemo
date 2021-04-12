@@ -53,6 +53,7 @@
     <Compile Include="3%29 RefactorForAbstraction\SimpleTradeMapper.cs" />
     <Compile Include="3%29 RefactorForAbstraction\SimpleTradeParser.cs" />
     <Compile Include="3%29 RefactorForAbstraction\SimpleTradeValidator.cs" />
+    <Compile Include="3%29 RefactorForAbstraction\SqlTradeStorage.cs" />
     <Compile Include="3%29 RefactorForAbstraction\StreamTradeDataProvider.cs" />
     <Compile Include="3%29 RefactorForAbstraction\TradeProcessor.cs" />
     <Compile Include="Program.cs" />
