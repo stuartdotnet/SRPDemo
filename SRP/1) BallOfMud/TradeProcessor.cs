@@ -7,7 +7,15 @@ namespace SRP1
 	/// <summary>
 	/// Trade Processor
 	/// </summary>
-	/// <remarks>This is the un modified class. Not using SRP. Ripe for refactoring</remarks>
+	/// <remarks>
+	/// This is the un modified class. Not using SRP. Ripe for refactoring.
+	/// It has the following reasons to change:
+	/// - If we need to use something other than stream for data retreival eg a web service
+	/// - If the input format changes
+	/// - If the validation rules change
+	/// - If we want to change the logging method
+	/// - If we want to change where/how we store data (eg NoSql, file share, blob storage)
+	/// </remarks>
 	public class TradeProcessor
 	{
 		public void ProcessTrades(System.IO.Stream stream)
